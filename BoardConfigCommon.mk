@@ -245,6 +245,7 @@ TARGET_USERIMAGES_USE_EXT4 := true
 # Power
 TARGET_USES_INTERACTION_BOOST := true
 
+
 # Gestures
 TARGET_POWER_GESTURE_FILE := $(PLATFORM_PATH)/power/gestures.c
 TARGET_GESTURES_NODE := "/proc/touchpanel/gesture_enable"
@@ -259,6 +260,10 @@ TARGET_ONE_FINGER_SWIPE_DOWN_NODE := "/proc/touchpanel/down_swipe_enable"
 TARGET_ONE_FINGER_SWIPE_LEFT_NODE := "/proc/touchpanel/left_swipe_enable"
 TARGET_ONE_FINGER_SWIPE_RIGHT_NODE := "/proc/touchpanel/right_swipe_enable"
 TARGET_TWO_FINGER_SWIPE_NODE := "/proc/touchpanel/double_swipe_enable"
+
+# Properties
+BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
+TARGET_VENDOR_PROP += $(PLATFORM_PATH)/vendor.prop
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/recovery.fstab
