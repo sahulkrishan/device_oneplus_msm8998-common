@@ -22,34 +22,35 @@
     <!-- Whether device has physical tri state switch -->
     <bool name="config_hasAlertSlider">true</bool>
 	
-	<!-- Wether device has dash charging support -->
+    <!-- Wether device has dash charging support -->
     <bool name="config_hasDashCharger">true</bool>
 	
-	<!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
+    <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
     <bool name="config_intrusiveBatteryLed">true</bool>
-	
-	<!-- Keycodes of gestures. If the gesture is not supported set it to 0. -->
-    <integer name="config_doubleTapKeyCode">143</integer>
 
-    <integer name="config_drawOKeyCode">250</integer>
+    <!-- Set to true to enable battery led multiple color support -->
+    <bool name="config_multiColorBatteryLed">true</bool>
 
-    <integer name="config_twoFingerSwipeKeyCode">251</integer>
+    <!-- Keycodes of gestures. If the gesture is not supported set it to 0. -->
+    <integer name="config_fpLongpressKeyCode">305</integer>
+    <integer name="config_fpSwipeUpKeyCode">103</integer>
+    <integer name="config_fpSwipeDownKeyCode">108</integer>
+    <integer name="config_fpSwipeLeftKeyCode">105</integer>
+    <integer name="config_fpSwipeRightKeyCode">106</integer>
 
-    <integer name="config_drawInverseVKeyCode">252</integer>
-
-    <integer name="config_drawArrowLeftKeyCode">253</integer>
-
-    <integer name="config_drawArrowRightKeyCode">254</integer>
-
-    <integer name="config_drawVKeyCode">255</integer>
-	
-	<integer name="config_oneFingerSwipeLeftKeyCode">63</integer>
-
+    <integer name="config_oneFingerSwipeLeftKeyCode">63</integer>
     <integer name="config_oneFingerSwipeDownKeyCode">64</integer>
-
     <integer name="config_oneFingerSwipeRightKeyCode">65</integer>
-
     <integer name="config_oneFingerSwipeUpKeyCode">66</integer>
+    <integer name="config_doubleTapKeyCode">143</integer>
+    <integer name="config_drawWKeyCode">246</integer>
+    <integer name="config_drawMKeyCode">247</integer>
+    <integer name="config_drawOKeyCode">250</integer>
+    <integer name="config_twoFingerSwipeKeyCode">251</integer>
+    <integer name="config_drawInverseVKeyCode">252</integer>
+    <integer name="config_drawArrowLeftKeyCode">253</integer>
+    <integer name="config_drawArrowRightKeyCode">254</integer>
+    <integer name="config_drawVKeyCode">255</integer>
 
     <!-- Default settings for gestures
             0 - Disabled
@@ -63,7 +64,12 @@
             8 - Open dialer -->
     <integer name="config_doubleTapDefault">1</integer>
 
+    <!-- True if the gesture service should be started at system start -->
+    <bool name="config_enableGestureService">true</bool>
+
+    <!-- Determines whether the device supports fingerprint navigation -->
+    <bool name="config_supportsFPNavigation">true</bool>
+
     <!-- Whether to intercept inputs on screen off. -->
     <bool name="config_enableKeyHandler">true</bool>
-	
 </resources>
